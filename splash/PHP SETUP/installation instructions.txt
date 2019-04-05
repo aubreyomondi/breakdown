@@ -1,0 +1,4 @@
+Instructions
+1.Check if  wamp server is installed on your machine by searching  for wamp in programs.
+2.If you cannot find it ,start by installing vcredist.exe then install Wamp server. THE ORDER IS VERY IMPORTANT!!!!.
+

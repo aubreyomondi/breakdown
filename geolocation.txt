@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Markers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+
+<!-- font files -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- /font files -->
+<!-- css files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /> 
+  <link href="css/pogo-slider.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/swipebox.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!-- /css files -->
+<!-- js files -->
+<script src="js/modernizr.custom.js"></script>
+<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+<!-- /js files -->
+</head>
+<body>
+<div class="main-top" id="home">
+
+<!-- /top bar -->
+<div class="header-top">
+      <div class="container">
+         <nav class="navbar navbar-default">
+        <div class="navbar-header navbar-left">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h2><a class="navbar-brand" href="index.html">BREAKDOWN SERVICES LOCATOR</span></a></h2>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav cl-effect-14">
+                 <li><a class="scroll" href="Admin.html" class="active">Breakdown locator</a></li>
+                <li><a class="scroll" href="index.html">Home</a></li>
+                <li><a class="scroll" href="about.html">About</a></li>
+                <li><a class="scroll" href="#service">Services</a></li>
+                <li><a class="scroll" href="contact.html">Contact</a></li>
+                </ul>
+          </div>
+          
+
+<div id="doc">
+
+  <h1>HTML5 Geolocation Demo</h1>
+  
+  <div id="geo-wrapper"></div>
+  <p id="msg"></p>
+  <p id="lat"></p>
+  <p id="long"></p>
+  <p>This is your location
+  </p>
+  
+</div>
+
+<script type="text/javascript">
+function supports_geolocation() {
+  return !!navigator.geolocation;
+}
+
+function get_location() {
+  if ( supports_geolocation() ) {
+    navigator.geolocation.getCurrentPosition(show_map, handle_error);
+  } else {
+    // no native support;
+  $("#msg").text('Your browser doesn\'t support geolocation!');
+  }
+}
+
+function show_map(position) {
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
+  // let's show a map or do something interesting!
+  
+  $("#geo-wrapper").css({'width':'100%','height':'480px'});
+  
+  var latlng = new google.maps.LatLng(latitude, longitude);
+  var myOptions = {
+    zoom: 12,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("geo-wrapper"), myOptions);
+  
+  var marker = new google.maps.Marker({
+    position: latlng,
+    title:"You are here (more or less)!"
+  });
+  
+  // To add the marker to the map, call setMap();
+  marker.setMap(map);
+  
+  $("#msg").text('Your browser thinks you are here:');
+  $("#lat").text('Latitude: ' + latitude);
+  $("#long").text('Longitude: ' + longitude);
+}
+
+function handle_error(err) {
+  if (err.code == 1) {
+    // user said no!
+  $("#msg").text('You chose not to share your location.');
+  }
+}
+
+get_location();
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Fh2p6BVQ31BzM5dfX75_YnyVFWjJZ78&callback=initMap">
+    </script>
+
+
+</body>
+</html>
