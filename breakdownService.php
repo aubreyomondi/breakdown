@@ -110,8 +110,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXVicmV5am9obnMiLCJhIjoiY2pub2wzMWV4MGQ0eDN3b
 var map = new mapboxgl.Map({
     container: 'js-main-slider',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [36.94096,-1.39286],
-    zoom: 12
+    center: [36.8058, -1.3163],
+    zoom: 14
 });
 
 
@@ -139,7 +139,7 @@ map.on('load', function () {
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [36.94096,-1.39286]
+                        "coordinates": [36.8058, -1.3163]
                     }
                 }]
             }
