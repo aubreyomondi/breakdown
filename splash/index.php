@@ -11,7 +11,6 @@ $username_err = "";
 $usertype_err = "";
 $password_err = "";
 $confirm_password_err = "";
-$message="";
  
 // Processing form data when form is submitted
 //if($_SERVER["REQUEST_METHOD"] == $signUp){
@@ -98,8 +97,7 @@ $message="";
             if(mysqli_stmt_execute($stmt)){
 
                 // Redirect to login page
-                //header("location: index.php");
-                $message="Sign Up Succeful";
+                header("location: index.php");
 
             } else{
                 echo nl2br("\r\n Something went wrong. Please try again later.");
@@ -252,7 +250,7 @@ elseif ( isset( $_POST['login'] ) ) {
 
     
     <div class="page-inner">
-    <!--<nav class="gtco-nav" role="navigation">
+    <nav class="gtco-nav" role="navigation">
         <div class="gtco-container">
             
             <div class="row">
@@ -270,7 +268,7 @@ elseif ( isset( $_POST['login'] ) ) {
             </div>
             
         </div>
-    </nav>-->
+    </nav>
     
     <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/banner2.jpg)">
         <div class="overlay"></div>
@@ -303,13 +301,8 @@ elseif ( isset( $_POST['login'] ) ) {
                                                 </div>
                                                 <div class="row form-group <?php echo (!empty($usertype_err)) ? 'has-error' : ''; ?>">
                                                     <div class="col-md-12">
-                                                        <label for="usertype">User Type</label>
-                                                        <select name="usertype" class="form-control" id="usertype" value="<?php echo $usertype; ?>">
-                                                        <option value="User">User</option>
-                                                        <option value="Breakdown">Breakdown</option>
-                                                        </select>
-                                                        <!--
-                                                        <input type="text" name="usertype" class="form-control" id="usertype" value="<?php echo $usertype; ?>">-->
+                                                        <label for="usertype">UserType:Breakdown or User </label>
+                                                        <input type="text" name="usertype" class="form-control" id="usertype" value="<?php echo $usertype; ?>">
                                                         <span class="help-block"><?php echo $usertype_err; ?></span>
                                                     </div>
                                                 </div>
@@ -331,9 +324,6 @@ elseif ( isset( $_POST['login'] ) ) {
                                                 <div class="row form-group">
                                                     <div class="col-md-12">
                                                         <input type="submit" name="signUp" class="btn btn-primary" value="Sign Up">
-                                                    </div>
-                                                    <div style="float: left;">
-                                                    <span style="color:red; display:inline;"><b><?php echo $message;?></b></span><span style="display:inline;"><b>, proceed to login</b></span>
                                                     </div>
                                                 </div>
                                             </form> 

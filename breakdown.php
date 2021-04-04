@@ -112,13 +112,21 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					<h1><a class="navbar-brand" href="index.html">BREAKDOWN SERVICES</a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 							 <ul class="nav navbar-nav cl-effect-14">
-								<li><a class="scroll" href="#" ><i style="position: relative; top: -0.5em;" class="fa fa-user fa-3x" aria-hidden="true"></i></a></li>
-						        <li><span style="color:orange;"><b><?php echo htmlspecialchars($_SESSION['username']); ?></b></span></li>
-                                <li><span ><b><a class="scroll" style="color:white;" href="logout.php">Logout</a></b></span></li>
+								<li><a class="scroll" href="index.php" >Home</a></li>
+								<li><a class="scroll" href="about.php" >About</a></li>
+								<li><a class="scroll" href="breakdown.php" class="active">Breakdown</a></li>
+								<li><a class="scroll" href="contact.php">Contact</a></li>
+						<li class="btn-cta" class="has-dropdown" >
+						    <a class="scroll" style="color:orange;" href="userprofile.php"><span><b><?php echo htmlspecialchars($_SESSION['username']); ?></b></span></a>
+							<ul class="dropdown">
+								<li><a style="color:white;" class="scroll" href="logout.php">Logout</a></li>
+							</ul>						    
+						</li>
 							  </ul>
 					</div>
 			<!-- /.navbar-collapse -->
@@ -199,7 +207,7 @@ map.on('load', function () {
                 },  {
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>Mlolongo Breakdown Services</strong><p><a href=\"http://www.truckeroodc.com/www/\" target=\"_blank\">Mlolongo</a> offers breakdown services and is available 24 hours a day. Call 0711170822. </p>",
+                        "description": "<strong>Truckeroo</strong><p><a href=\"http://www.truckeroodc.com/www/\" target=\"_blank\">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>",
                         "icon": "car"
                     },
                     "geometry": {
@@ -209,7 +217,7 @@ map.on('load', function () {
                 }, {
                     "type": "Feature",
                     "properties": {
-                        "description": "<strong>Mlolongo Breakdown Services</strong><p><a href=\"http://www.truckeroodc.com/www/\" target=\"_blank\">Mlolongo</a> offers breakdown services and is available 24 hours a day. Call 0711170822. </p>",
+                        "description": "<strong>Truckeroo</strong><p><a href=\"http://www.truckeroodc.com/www/\" target=\"_blank\">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>",
                         "icon": "car"
                     },
                     "geometry": {
@@ -292,21 +300,12 @@ $('#lng').val(longitude);
 <!-- top bar -->
 <div class="top-bar">
 	<div class="container">
-        <h1><a class="navbar-brand" href="#">BREAKDOWN SERVICES <span>LOCATOR</span></a></h1>
-        <!--start-used to allow for breakdown services locator visibility in mobile-->
-        <ul class="top-contacts">
-            <li class="top-unhover"><p><span class="" aria-hidden="true"></span></p>
-            <li class="top-hover"><p><span class="" aria-hidden="true"></span> <a href="mailto:support@company.com"></a></p>
-        </ul>
-		<ul class="top-contacts">
-            <li class="top-unhover"><p><span class="" aria-hidden="true"></span></p>
-            <li class="top-hover"><p><span class="" aria-hidden="true"></span> <a href="mailto:support@company.com"></a></p>
-        </ul>
-        <ul class="top-contacts">
-            <li class="top-unhover"><p><span class="" aria-hidden="true"></span></p>
-            <li class="top-hover"><p><span class="" aria-hidden="true"></span> <a href="mailto:support@company.com"></a></p>
-        </ul>
-        <!--stop-used to allow for breakdown services locator visibility in mobile-->
+		<ul class="top-links">
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		</ul>
 		<div class="clearfix"></div>
 	</div>		
 </div>
@@ -321,6 +320,14 @@ $('#lng').val(longitude);
                   <p>Your browser thinks you are here. <br></p>
                   <p>The map above shows your location using a blue icon, click on the icon to automatically enter your lat and long coordinates in the form. 
                   </p>
+                  <!--
+					<ul class="top-links two three">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				-->
 			</div>
 			<div class="col-md-6 w3agile_newsletter_right">
 				<form >
@@ -353,15 +360,18 @@ $('#lng').val(longitude);
 					<h3>Contact Info</h3>
 					<ul class="agileinfo_footer_grid_list">
 						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Strathmore University, Madaraka, <span>Nairobi City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:aubreyomondi@gmail.com">aubreyomondi@gmail.com</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">aubrey.omondi@strathmore.edu</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+254 711 170 822</li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:ayan.keynan@strathmore.edu">ayan.keynan@strathmore.edu</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">ayan.keynan@strathmore.edu</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+254 799 619 965</li>
 					</ul>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Navigation</h3>
 					<ul class="agileinfo_footer_grid_nav">
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="index.php">Home</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="about.php">About</a></li>	
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="breakdown.php">Breakdown</a></li>
 						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="contact.php">Mail Us</a></li>
 					</ul>
 				</div>
@@ -390,6 +400,7 @@ $('#lng').val(longitude);
 }
 </script>
 <!-- swipe box js -->
+
 <script src="js/jquery-2.2.3.min.js"></script> 
 <script src="js/jquery.pogo-slider.min.js"></script>
 <script src="js/main.js"></script>
@@ -479,7 +490,16 @@ $('#lng').val(longitude);
 			<!-- //swipe box js -->
 
  <script type="text/javascript">
-						$(document).ready(function() {							
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
 							$().UItoTop({ easingType: 'easeOutQuart' });
 							
 						});
