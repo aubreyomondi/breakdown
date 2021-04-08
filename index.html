@@ -1,171 +1,226 @@
-<!--Authors: Aubrey and Ayan
--->
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
+
 <head>
-<title>Break Down Services Locator</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content=" " />
+	<title>Car Care</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Aubrey Omondi">
+	<meta name="keywords" content=" " />
 
-<!-- pub nub -->
- <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
-<!-- pub nub -->
+	<!-- pub nub -->
+	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	<!-- pub nub -->
 
-<!-- font files -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<!-- /font files -->
+	<!-- font files -->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!-- /font files -->
 
-<!-- css files -->
+	<!-- css files -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/pogo-slider.min.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/swipebox.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<!-- /css files -->
+	<!-- /css files -->
 
-<!-- js files -->
-<script src="js/modernizr.custom.js"></script>
-<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-<!-- /js files -->
+	<!-- js files -->
+	<script src="js/modernizr.custom.js"></script>
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<!-- /js files -->
 
+	<!-- Add favicon -->
+    <link rel="shortcut icon" href="images/" type="image/x-icon">
+    <!-- /Add favicon -->
 </head>
+
 <body>
-<div class="main-top" id="home">
-
-<!-- /top bar -->
-<div class="header-top">
-			<div class="container">
-			   <nav class="navbar navbar-default">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h1><a class="navbar-brand" href="index.html">BREAKDOWN SERVICES <span>LOCATOR</span></a></h1>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-							 <ul class="nav navbar-nav cl-effect-14">
-								<li><a class="scroll" href="index.html" class="active">Home</a></li>
-								<li><a class="scroll" href="about.html">About</a></li>
-								<li><a class="scroll" href="breakdown.php">Breakdown</a></li>
-								<li><a class="scroll" href="contact.html">Contact</a></li>
-							  </ul>
+	<div class="main-top" id="home">
+		<div class="header-top">
+			<div class="container-fluid">
+				<nav class="navbar navbar-default nav-fixed-top">
+					<div class="navbar-header navbar-left">
+						<button class="navbar-toggle " data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<!-- <span class="sr-only">Toggle navigation</span> -->
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a class="navbar-brand" href="#slide01"><span>CAR</span> CARE</a></h1>
 					</div>
-			<!-- /.navbar-collapse -->
-
-			</nav>	
-
-				
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav cl-effect-14">
+							<li data-menuanchor="slide02"><a class="scroll" href="#slide02">Our Services</a></li>
+							<li data-menuanchor="slide03"><a class="scroll" href="#slide03">Our Works</a></li>
+							<li data-menuanchor="slide04"><a class="scroll" href="#slide04">Our Team</a></li>
+							<li data-menuanchor="slide05"><a class="scroll" href="#slide05">Contact Us</a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
 			</div>
-			
 		</div>
-</div>
-	<!-- Nav tabs -->
 
-<!-- banner section -->
-<div class="pogoSlider" id="js-main-slider">
-	<div class="pogoSlider-slide" data-transition="verticalSlide" data-duration="1000"  style="background-image:url(images/pogoImage.jpg);">
-		<div class="pogoSlider-slide-element">
-			<h3>CAR <span>BREAKDOWN</span> SERVICES LOCATOR</h3>
-			
-		</div>		
-	</div>
-	<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"  style="background-image:url(images/pogoImage1.jpg);">
-		<div class="pogoSlider-slide-element">
-		<h3>WE <span>GIVE</span> BEST SERVICES</h3>
-		</div>
-	</div>
-
-	<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"  style="background-image:url(images/pogoImage2.jpg);">
-		<div class="pogoSlider-slide-element">
-			<h3>CAR <span>BREAKDOWN</span> SERVICES LOCATOR</h3>
-		</div>
-	</div>
-	<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"  style="background-image:url(images/pogoImage3.jpg);">
-		<div class="pogoSlider-slide-element">
-			<h3><span>WE GIVE BEST SERVICES</span></h3>
-		</div>
-	</div>
-</div>
-<!-- /banner section -->
-<!-- top bar -->
-<div class="top-bar">
-	<div class="container">
-		<ul class="top-links">
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-		</ul>
-		<div class="clearfix"></div>
-	</div>		
-</div>
-
-<!--what-we-do-->
-			<div class="tabs" id="about">
-				<div class="container">
-				<div class="t-head">
-				<h3 class="head">WHY CHOOSE US?</h3>
-			     <p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
-				 </div>
-					<div class="tabs-grids">
-						<div id="parentVerticalTab">
-							<ul class="resp-tabs-list hor_1">
-								<li>Car Wash</li>
-								<li>Car Repair</li>
-								<li>Car Welding</li>
-								<li>Car Delivery</li>
-								
-								
-							</ul>
-								<div class="resp-tabs-container hor_1">
-									<div class="text agile-info">
-										<h4>CAR WASH</h4>
-									    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accUKntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-										<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-										<img src="images/6.jpg" alt=" " class="img-responsive" />
-										
-									</div>
-									<div class="text agile-info">
-										<h4>CAR REPAIR</h4>
-									    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accUKntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-										<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-										<img src="images/9.jpg" alt=" " class="img-responsive" />
-										
-									</div>
-
-									<div class="text agile-info">
-										<h4>CAR WELDING</h4>
-																<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accUKntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-										<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-										<img src="images/7.jpg" alt=" " class="img-responsive" />
-										
-									</div>
-
-									
-
-									<div class="text agile-info">
-										<h4>CAR DELIVERY</h4>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accUKntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-										<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-										<img src="images/5.jpg" alt=" " class="img-responsive" />
-										
-									</div>
-							</div>
-						</div>
-					</div>
+		<!-- banner section -->
+		<div class="pogoSlider section" id="js-main-slider" data-section="slide01">
+			<div class="pogoSlider-slide" data-transition="verticalSlide" data-duration="1000"
+				style="background-image:url(images/banner1.jpg);">
+				<div class="pogoSlider-slide-element">
+					<h3><span>BREAKDOWN </span>SERVICES</h3>
 				</div>
-			</div>	
-			<!--//what-we-do-->
-  <!--count-down -->
+			</div>
+			<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"
+				style="background-image:url(images/banner2.jpg);">
+				<div class="pogoSlider-slide-element">
+					<h3>CAR <span>REPAIR</span></h3>
+				</div>
+			</div>
+			<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"
+				style="background-image:url(images/banner3.jpg);">
+				<div class="pogoSlider-slide-element">
+					<h3>CAR <span>MAINTENANCE</span></h3>
+				</div>
+			</div>
+			<div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="1000"
+				style="background-image:url(images/banner4.jpg);">
+				<div class="pogoSlider-slide-element">
+					<h3>CAR <span>DELIVERY</span></h3>
+				</div>
+			</div>
+		</div>
+		<!-- /banner section -->
+		<!-- top bar -->
+		<div class="top-bar">
+			<div class="container">
+				<ul class="top-contacts">
+					<li class="top-unhover">
+						<p><span class="fa fa-phone-square" aria-hidden="true"></span> +1 124 234 0079</p>
+					<li class="top-hover">
+						<p><span class="fa fa-envelope" aria-hidden="true"></span> <a
+								href="mailto:support@company.com">my@company.com</a></p>
+				</ul>
+				<ul class="top-links">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- /top bar -->
+		<!--what-we-do-->
+		<div class="tabs section" id="about" data-section="slide02">
+			<div class="container">
+				<div class="t-head">
+					<h3 class="head">WHY CHOOSE US?</h3>
+					<p class="urna">We offer the best services in the following areas</p>
+				</div>
+
+				<div class="gallery-grids">
+					<div class="col-md-4 baner-top">
+						<a href="images/1.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/12.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Towing</h4>
+										<span class="separator"></span>
+										<p>Breakdown services</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 baner-top">
+						<a href="images/1.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/9.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Maintenance</h4>
+										<span class="separator"></span>
+										<p>We ensure your car is in its best form.</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 baner-top">
+						<a href="images/2.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/2.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Repair</h4>
+										<span class="separator"></span>
+										<p>We repair your brokendown car.</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 baner-top ban-mar">
+						<a href="images/3.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/8.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Welding</h4>
+										<span class="separator"></span>
+										<p>We offer car welding services.</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 baner-top ban-mar">
+						<a href="images/4.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/6.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Wash</h4>
+										<span class="separator"></span>
+										<p>Thorough cleaning leaving your car spotless.</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 baner-top ban-mar">
+						<a href="images/5.jpg" class="b-link-stripe b-animate-go  swipebox">
+							<div class="gal-spin-effect vertical ">
+								<img src="images/5.jpg" alt=" " />
+								<div class="gal-text-box">
+									<div class="info-gal-con">
+										<h4>Car Delivery</h4>
+										<span class="separator"></span>
+										<p>Reliable and trusted car delivery.</p>
+										<span class="separator"></span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//what-we-do-->
+	<!--count-down -->
 	<div class="count" id="service">
 		<div class="container">
 			<div class="col-md-3 agile_count_grid">
@@ -173,7 +228,7 @@
 					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
 				</div>
 				<div class="agile_count_grid_right">
-					<p class="counter">324</p> 
+					<p class="counter">324</p>
 				</div>
 				<div class="clearfix"> </div>
 				<h3>Creative Design</h3>
@@ -183,7 +238,7 @@
 					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 				</div>
 				<div class="agile_count_grid_right">
-					<p class="counter">543</p> 
+					<p class="counter">543</p>
 				</div>
 				<div class="clearfix"> </div>
 				<h3>Happy Clients</h3>
@@ -193,7 +248,7 @@
 					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 				</div>
 				<div class="agile_count_grid_right">
-					<p class="counter">434</p> 
+					<p class="counter">434</p>
 				</div>
 				<div class="clearfix"> </div>
 				<h3>People Loved</h3>
@@ -203,40 +258,41 @@
 					<span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
 				</div>
 				<div class="agile_count_grid_right">
-					<p class="counter">234</p> 
+					<p class="counter">234</p>
 				</div>
 				<div class="clearfix"> </div>
 				<h3>Save Income</h3>
 			</div>
 			<div class="clearfix"> </div>
-			
+
 		</div>
 	</div>
-<!-- //count-down -->
-<!-- work -->
-	<div class="work" id="work">
+	<!-- //count-down -->
+	<!-- work -->
+	<div class="work section" id="work" data-section="slide03">
 		<h3 class="head">Our Works</h3>
-		<p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
-		
+		<p class="urna">View a gallery of our competent staff at work.</p>
+
 		<div class="agileits_works-top">
-				<div class="col-md-4 agileits_works-grid">
-					<img src="images/4.jpg" alt=" " class="img-responsive" />
+			<div class="col-md-4 agileits_works-grid">
+				<img src="images/4.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-4 agileits_works-grid two">
+				<div class="wthree-text">
+					<h4>Car Care</h4>
+					<p>Car Care is simply the leader in the car services industry. Car Care has
+						been the industry's standard ever since the 1960s.</p>
 				</div>
-				<div class="col-md-4 agileits_works-grid two">
-				    <div class="wthree-text">
-					   <h4>Lorem Ipsum</h4>
-					   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry,Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-					</div>
-					
-				</div>
-				<div class="col-md-4 agileits_works-grid">
-					<img src="images/10.jpg" alt=" " class="img-responsive" />
-				</div>
-		    <div class="clearfix"> </div>
+
+			</div>
+			<div class="col-md-4 agileits_works-grid">
+				<img src="images/10.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="clearfix"> </div>
 		</div>
-		
+
 		<div class="agileits_work_grids">
-			<ul id="flexiselDemo1">			
+			<ul id="flexiselDemo1">
 				<li>
 					<div class="agileits_work_grid view view-sixth">
 						<img src="images/2.jpg" alt=" " class="img-responsive" />
@@ -270,26 +326,26 @@
 					</div>
 				</li>
 			</ul>
-	
+
 		</div>
 	</div>
-<!-- //work -->
-<!--team -->
-<div class="team" id ="team">
+	<!-- //work -->
+	<!--team -->
+	<div class="team section" id="team" data-section="slide04">
 		<div class="container">
 			<h3 class="head">Meet Our Team</h3>
-			<p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
+			<p class="urna">Our team is dedicated to offering you the best services.</p>
 			<div class="agile_team_grids">
 				<div class="col-md-3 agile_team_grid">
 					<div class="agile_team_grid_main">
 						<img src="images/t1.jpg" alt=" " class="img-responsive">
 						<div class="p-mask">
-								<ul class="top-links two">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+							<ul class="top-links two">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="agile_team_grid1">
@@ -301,12 +357,12 @@
 					<div class="agile_team_grid_main">
 						<img src="images/t2.jpg" alt=" " class="img-responsive">
 						<div class="p-mask">
-								<ul class="top-links two">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+							<ul class="top-links two">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="agile_team_grid1">
@@ -314,16 +370,16 @@
 						<p>Car Inspection</p>
 					</div>
 				</div>
-					<div class="col-md-3 agile_team_grid three">
+				<div class="col-md-3 agile_team_grid three">
 					<div class="agile_team_grid_main">
 						<img src="images/t3.jpg" alt=" " class="img-responsive">
 						<div class="p-mask">
-								<ul class="top-links two">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+							<ul class="top-links two">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="agile_team_grid1">
@@ -335,12 +391,12 @@
 					<div class="agile_team_grid_main">
 						<img src="images/t4.jpg" alt=" " class="img-responsive">
 						<div class="p-mask">
-								<ul class="top-links two">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
+							<ul class="top-links two">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="agile_team_grid1">
@@ -348,192 +404,34 @@
 						<p>Car Delivery</p>
 					</div>
 				</div>
-			
+
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- //team -->
-<!--Gallery-->
-<div class="gallery" id="gallery">
-		<div class="container">
-		<h3 class="head">Our Gallery</h3>
-			<p class="urna">Vestibulum commodo urna sit amet volutpat.</p>
-		
-				<div class="gallery-grids">
-					<div class="col-md-4 baner-top">
-						<a href="images/1.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/1.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top">
-						<a href="images/2.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/2.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top ban-mar">
-						<a href="images/3.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/3.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top ban-mar">
-						<a href="images/4.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/4.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top ban-mar">
-						<a href="images/5.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/5.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top ban-mar">
-						<a href="images/6.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/6.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top">
-						<a href="images/7.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/7.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 baner-top">
-						<a href="images/8.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/8.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-						<div class="col-md-4 baner-top">
-						<a href="images/9.jpg" class="b-link-stripe b-animate-go  swipebox">
-							<div class="gal-spin-effect vertical ">
-								<img src="images/9.jpg" alt=" " />
-								<div class="gal-text-box">
-									<div class="info-gal-con">
-										<h4>Car Towing</h4>
-										<span class="separator"></span>
-										<p>Sit accusamus, vel blanditiis iure minima ipsa.</p>
-										<span class="separator"></span>
-										
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			</div>
-<!-- //gallery -->
-<!-- newsletter -->
-	<div class="newsletter" id="contact">
+	<!-- //team -->
+	<!-- newsletter -->
+	<div class="newsletter section" id="contact" data-section="slide05">
 		<div class="container">
 			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>Contact With us</h3>
-				<p>Donec porta lacus vitae urna placerat, vitae dapibus nulla eleifend. 
-					Donec aliquam neque quis felis viverra pulvinar. Aliquam erat volutpat. 
-					Nam enim metus, faucibus non porttitor id, laoreet quis sapien.</p>
-					<p>Lorem porta lacus vitae urna placerat, vitae dapibus nulla eleifend. 
-					Donec aliquam neque quis felis viverra pulvinar. Aliquam erat volutpat. 
-					Nam enim metus, faucibus non porttitor id, laoreet quis sapien.</p>
-					<ul class="top-links two three">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
+				<h3>Contact Us</h3>
+				<p>We have a committed Customer Service Team that will answer to you when you need us.
+					Feel free to Contact Us.</p>
+				<p>We are an open-minded team. We look forward to hearing from you. Thanks for
+					supporting us.</p>
+				<ul class="top-links two three">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
 			</div>
 			<div class="col-md-6 w3agile_newsletter_right">
-				<form action="#" method="post">
-				    <p>Your Name </p>
-				    <input type="text" name="Your Name"  required=""/>
+				<form action="mailto:aubrey.omondi@strathmore.edu" method="post">
+					<p>Your Name </p>
+					<input type="text" name="Your Name" required="" />
 					<p>Your Email </p>
-                    <input type="email" name="Your Email"  required=""/>
+					<input type="email" name="Your Email" required="" />
 					<p>Your Message </p>
 					<textarea placeholder="" required=""></textarea>
 
@@ -543,174 +441,168 @@
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //newsletter -->
-<!-- map -->
-		<div class="map agileits">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26359195.17562375!2d-113.7156245614499!3d36.2473834534249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1471497559566"  frameborder="0" style="border:0" allowfullscreen></iframe>
-				<div class="map-grids">
-					<div class="map-grid-left">
-						<ul>
-								<li class="dot"><i class="fa fa-location-arrow" aria-hidden="true"></i> BD 2 Mars, N1 136, Morocco Casablanca</li>
-								<li class="mobile"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +212 522 275 386</li>
-								<li class="mes"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">Example @mail.com</a></li>
-						</ul>
-						<p class="text">OUR LOCATION </p>
-						<label class="right-arrow"> </label>
-					</div>
-					<div class="map-grid-right">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			
-		</div>
-		<!-- //map -->
+	<!-- //newsletter -->
+	<!-- map -->
+	<div class="map agileits" id="js-main-slider">
+		<iframe
+			src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm84KAfYQLxgRUBkzFSFB2C4&key=AIzaSyDiAGmGSenmNiIeb8oyqBFRb7zT4oq-K7k"
+			frameborder="0" style="border:0" allowfullscreen>
+		</iframe>
+	</div>
+	<!-- //map -->
 
-<!-- footer -->
+	<!-- footer -->
 	<div class="footer">
 		<div class="container">
 			<div class="agileinfo_footer_grids">
 				<div class="col-md-4 agileinfo_footer_grid">
-					<h2><a href="index.html">BREAKDOWN SERVICES <span>LOCATOR</span></a></h2>
-					<p>Worry no more. We offer the best breakdown services locator system.</p>
-					
+					<h2><a href="index.html"><span>CAR</span> CARE</a></h2>
+					<p>Worry no more. </br>We got you covered.</p>
+
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Contact Info</h3>
 					<ul class="agileinfo_footer_grid_list">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Strathmore University, Madaraka, <span>Nairobi City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">aubrey.omondi@strathmore.edu</a></li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Strathmore University,
+							Madaraka, <span>Nairobi City.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a
+								href="mailto:info@example.com">aubrey.omondi@strathmore.edu</a></li>
 						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+254 711 170 822</li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">ayan.keynan@strathmore.edu</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+254 799 619 965</li>
 					</ul>
 				</div>
 				<div class="col-md-4 agileinfo_footer_grid">
 					<h3>Navigation</h3>
 					<ul class="agileinfo_footer_grid_nav">
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="index.html">Home</a></li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="about.html">About Us</a></li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="breakdown.php">Breakdown</a></li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="contact.html">Mail Us</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="">Our
+								Services</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="">Our
+								Works</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll" href="">Our
+								Team</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a class="scroll"
+								href="breakdown.php">Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		
+
 		</div>
 	</div>
-		<div class="w3agile_footer_copy">
-				<p>&copy; 2018 BreakDown Services Locator. All rights reserved | Design by <b><em>Aubrey and Ayan</em></b></p>
-			</div>
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //footer -->
-<!-- js files -->
-<!-- swipe box js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
-<script src="js/jquery.pogo-slider.min.js"></script>
-<script src="js/main.js"></script>
-<!-- /js files -->
+	<div class="w3agile_footer_copy">
+		<p>&copy; 2018 BreakDown Services Locator. All rights reserved.
+		</p>
+	</div>
+	<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+		</span></a>
+	<!-- //footer -->
+	<!-- js files -->
+	<!-- swipe box js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery.pogo-slider.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- /js files -->
 	<!-- Starts-Number-Scroller-Animation-JavaScript -->
-					<script src="js/waypoints.min.js"></script> 
-					<script src="js/counterup.min.js"></script> 
-					<script>
-						jQuery(document).ready(function( $ ) {
-							$('.counter').counterUp({
-								delay: 20,
-								time: 1000
-							});
-						});
-					</script>
-				<!-- //Starts-Number-Scroller-Animation-JavaScript -->
-							<script type="text/javascript">
-					$(window).load(function() {
-						$("#flexiselDemo1").flexisel({
-							visibleItems: 4,
-							animationSpeed: 1000,
-							autoPlay: true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-							responsiveBreakpoints: { 
-								portrait: { 
-									changePoint:480,
-									visibleItems: 1
-								}, 
-								landscape: { 
-									changePoint:640,
-									visibleItems:2
-								},
-								tablet: { 
-									changePoint:768,
-									visibleItems: 3
-								}
-							}
-						});
-						
-					});
-				</script>
-				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-				<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-   <script src="js/easyResponsiveTabs.js"></script>
-   <!--Plug-in Initialisation-->
-				<script type="text/javascript">
-				$(document).ready(function() {
-
-					//Vertical Tab
-					$('#parentVerticalTab').easyResponsiveTabs({
-						type: 'vertical', //Types: default, vertical, accordion
-						width: 'auto', //auto or any width like 600px
-						fit: true, // 100% fit in a container
-						closed: 'accordion', // Start closed if in accordion view
-						tabidentify: 'hor_1', // The tab groups identifier
-						activate: function(event) { // Callback function if tab is switched
-							var $tab = $(this);
-							var $info = $('#nested-tabInfo2');
-							var $name = $('span', $info);
-							$name.text($tab.text());
-							$info.show();
-						}
-					});
-				});
-			</script>
-			<!--/script-->
-
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/counterup.min.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$('.counter').counterUp({
+				delay: 20,
+				time: 1000
 			});
-</script>
-<!-- swipe box js -->
-			<script src="js/jquery.swipebox.min.js"></script> 
-				<script type="text/javascript">
-					jQuery(function($) {
-						$(".swipebox").swipebox();
-					});
-			</script>
-			<!-- //swipe box js -->
+		});
+	</script>
+	<!-- //Starts-Number-Scroller-Animation-JavaScript -->
+	<script type="text/javascript">
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 3
+					}
+				}
+			});
 
- <script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+	<script src="js/easyResponsiveTabs.js"></script>
+	<!--Plug-in Initialisation-->
+	<script type="text/javascript">
+		$(document).ready(function () {
 
-<!--end-smooth-scrolling-->
-<script src="js/bootstrap.js"></script>
+			//Vertical Tab
+			$('#parentVerticalTab').easyResponsiveTabs({
+				type: 'vertical', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo2');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+		});
+	</script>
+	<!--/script-->
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+			});
+		});
+	</script>
+	<!-- swipe box js -->
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+	<!-- //swipe box js -->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+
+	<!--end-smooth-scrolling-->
+	<script src="js/bootstrap.js"></script>
 </body>
+
 </html>
